@@ -1,4 +1,5 @@
 const mapboxgl = require('mapbox-gl');
+import {buildMarker} from './marker'
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FndXRpMTUiLCJhIjoiY2sxNms2bDQyMHk1OTNibGJpa2E5YnpxOCJ9.lghiwZkOxYaP9ZLXJVp0Lw';
 
@@ -16,4 +17,8 @@ fullStack.style.height = '32px';
 fullStack.style.backgroundImage = 'url(http://i.imgur.com/WbMOfMl.png)';
 
 new mapboxgl.Marker(fullStack).setLngLat([-74.009151, 40.705086]).addTo(map);
+
+buildMarker("Sakura", map, "restaurant", [-74.0085373,40.709633])
+
+
 
