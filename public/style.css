@@ -8,6 +8,45 @@ body {
   background-color: #C1B5AD;
 }
 #map {
+  position: relative;
   height: 100vh;
   width: 100vw;
+  z-index: 0;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  height: 8%;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(255, 89, 33, 1);
+}
+
+.sidebar {
+  display: flex;
+  align-content: space-between;
+  position: fixed;
+  top: 8%;
+  right: 0px;
+  height: 700px;
+  width: 300px;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.places {
+  height: 42vw;
+  width: 300px;
+  background-color: rgba(209, 182, 131, 1);
+}
+
+.itinerary {
+  height: 42vw;
+  width: 300px;
+  background-color: rgba(209, 182, 131, 1);
+}
+
+div button {
+  background-color: red;
 }
