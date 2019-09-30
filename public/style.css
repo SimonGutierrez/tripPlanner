@@ -47,6 +47,12 @@ nav {
   background-color: rgba(209, 182, 131, 1);
 }
 
+div .buttonRow {
+  align-content: center;
+}
+
 div button {
+  height: 30px;
+  width: 30px;
   background-color: red;
 }
